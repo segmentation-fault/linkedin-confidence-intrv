@@ -1,6 +1,6 @@
 # Confidence Intervals, or how to be sure I run enough simulations
 
-(This is the companion code to my linkedIn article)
+(This is the companion code to my [linkedIn article](https://www.linkedin.com/pulse/confidence-intervals-how-sure-i-run-enough-antonio-franco-spruf/))
 
 ## Intro
 The objective of an odds pricing algorithm for a sport, is to produce market odds from some initial parameters. Odds are, essentially, the probability of a certain outcome with a margin (or a vig) added. When writing the algorithm you have, essentially two ways to proceed:

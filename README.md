@@ -4,8 +4,9 @@
 
 ## Intro
 The objective of an odds pricing algorithm for a sport, is to produce market odds from some initial parameters. Odds are, essentially, the probability of a certain outcome with a margin (or a vig) added. When writing the algorithm you have, essentially two ways to proceed:
-	- Writing a statistical model that outputs market probabilities (e.g. probabilities for Over/Under 1.5 goals for a soccer match at Final Time) given some initial parameters (e.g. goal expectations, supremacy etc.)
-	- Writing a MonteCarlo (MC) simulation, doing the same stuff as the previous.
+
+* Writing a statistical model that outputs market probabilities (e.g. probabilities for Over/Under 1.5 goals for a soccer match at Final Time) given some initial parameters (e.g. goal expectations, supremacy etc.)
+* Writing a MonteCarlo (MC) simulation, doing the same stuff as the previous.
 	
 Both have pros and cons. A statistical model is harder to develop, and often entails major code re-factorings in the test phase; additionally, adapting it from a pre-match modelling to a live modelling is not straightforward. On the other hand, it is usually faster to run and optimize. A MonteCarlo simulation is easier to develop, easier to adapt to a live competition, but is usually heavier on the hardware (especially if accurate results are needed, as we will see in the following); parallelization and optimization efforts are thus often needed. 
 
